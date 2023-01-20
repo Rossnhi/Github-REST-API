@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  color: #999;
+  font-family: 'Amatic SC', Courier New;
+}
+canvas {
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  font-size: 55px;
+  margin: 10px;
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  color: #555;
+}
+
