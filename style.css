@@ -1,8 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color : #dc5;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   background: #222;
-  color: #999;
+  color: #bbb;
   font-family: 'Amatic SC', Courier New;
 }
 canvas {
@@ -10,14 +18,41 @@ canvas {
   margin: auto;
 }
 
-h1 {
-  font-size: 55px;
+h1, h2 {
   margin: 10px;
   text-align: center;
 }
 
-hr {
-  width: 80%;
-  color: #555;
+h1 {
+  font-size: 55px;
 }
+
+ul {
+  list-style-type: none;
+  font-size: 25px;
+  padding: 0px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.bookHeader, .bookBody {
+  white-space: nowrap;
+}
+
+.bookHeaderEle, .bookBodyEle {
+  display: inline-block;
+  width: calc(50% - 2px);
+  background: var(--primary-color);
+  color: #222;
+}
+
+.bookBodyEle {
+  background: #222;
+  color: #bbb;
+  text-align: center;
+}
+
 
