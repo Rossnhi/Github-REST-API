@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <title>Book List App</title>
+  </head>
+  <body>
+      <div class="container">
+      <h1>~Book List~</h1>
+      <hr>
+      <div class="bookHeader">
+        <div class="bookHeaderEle" id="bookHeaderName">
+          <h2>Name</h2>
+        </div>
+        <div class="bookHeaderEle" id="bookHeaderAuthor">
+          <h2>Author</h2>
+        </div>
+      </div>
+      <div class="bookBody">
+        <div class="bookBodyEle">
+          <ul id="bookNameList">
+          </ul>
+        </div>
+        <div class="bookBodyEle">
+          <ul id="bookAuthorList">
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <input type="text" id="name"/>
+        <input type="text" id="author"/>
+        <button id="sendButton">></button>
+      </div>
+    </div>
+    <div id="hiddenOverlay">
+      <div id="keyContainer">
+        <span id="authenticationMessage"></span>
+        <p>Enter Key: </p>
+        <input type="text" id="key"/>
+        <button id="sendKeyButton">></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

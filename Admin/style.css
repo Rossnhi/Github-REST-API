@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color : #dc5;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  color: #bbb;
+  font-family: 'Amatic SC', Courier New;
+}
+canvas {
+  display: block;
+  margin: auto;
+}
+
+h1, h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 25px;
+  padding: 0px;
+}
+
+input {
+  height: 40px;
+  width: calc(50% - 23px);
+}
+
+button {
+  background: var(--primary-color);
+  color: #222;
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #222;
+  color: var(--primary-color);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.bookHeader, .bookBody {
+  white-space: nowrap;
+}
+
+.bookBody {
+  max-height: 65vh;
+  overflow: auto;
+}
+
+.bookHeaderEle, .bookBodyEle {
+  display: inline-block;
+  width: calc(50% - 2px);
+  background: var(--primary-color);
+  color: #222;
+}
+
+.bookBodyEle {
+  background: #222;
+  color: #bbb;
+  text-align: center;
+}
+
+#hiddenOverlay {
+  background: #1119;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+
+#keyContainer {
+  position: absolute;
+  top: calc(50% - 52.5px);
+  left: calc(50% - 121px);
+}
+
+#keyContainer > input {
+  min-width: 200px;
+}
+
+p, span {
+  font-size: 20px;
+}
+
+#authenticationMessage {
+  color: red;
+}
+
+
