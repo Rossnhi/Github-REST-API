@@ -42,6 +42,11 @@ ul {
   white-space: nowrap;
 }
 
+.bookBody {
+  max-height: 65vh;
+  overflow: auto;
+}
+
 .bookHeaderEle, .bookBodyEle {
   display: inline-block;
   width: calc(50% - 2px);
